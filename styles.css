@@ -50,7 +50,9 @@ MAIN PAGE
 
 .bioTop {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .page-content {
@@ -99,11 +101,17 @@ p{
   border: 5px solid black;
   border-radius:40px;
   width: 120px;
-
+  box-shadow: inset 4px 4px;
 }
 
 .socials {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blue {
+  background-color: lightskyblue;
 }
 
 h1 {
@@ -135,7 +143,7 @@ h1 {
 Media Queries  
 *******************************************/
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 560px) {
   .page-content{
     margin-top: 100px;
   }
