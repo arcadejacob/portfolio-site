@@ -9,13 +9,11 @@ a {
 }
 
 body {
-  background: beige;
+  background: rgb(231,221,210);
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
   height: 100vh;
+  font-family: sans-serif;
 }
 
 /*******************************************
@@ -24,45 +22,64 @@ NAV BAR
 
 .nav {
   display: flex;
-  position: fixed;
-  background: white;
-  box-shadow: 0 1px 20px;
-  width: calc(100% - 40px);
-  color: black;
-  border-radius: 0 0 20px 20px;
-  margin: 0 20px;
-  height: 75px;
   z-index: 2;
-  animation: slideFromTop 2s forwards;
-}
-
-.left {
- display: flex;
- flex-direction: row;
- align-items: center;
- justify-content: space-around;
-}
-
-.cartoon {
-  height: 50px;
-  transform: rotate(-11deg);
-  margin-left: 25px;
+  margin: 20px;
 }
 
 .navName {
-  font-size: 1.7em;
-  padding-left: 10px;
+  font-size: 3.5em;
+  padding: 10px 20px;
+  font-family: 'Futura';
 }
 
-.right {
-  display: none
-}
+/*******************************************
+MAIN PAGE 
+*******************************************/
 
-.foot {
-  display:flex;
-  flex-direction: row;
+.page-content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  margin: 120px 0 0 100px;
+  z-index: 1;
+}
+
+.card {
+  display: flex;
   justify-content: center;
+  background: rgba(255,255,255);
+  border-radius: 10px;
+  box-shadow: 10px 10px;
+  width: 116px;
+}
+
+.jacobPic {
+  border-radius: 10px;
+  max-width: 296px;
+  box-shadow: 10px 10px;
+}
+
+.socials {
+  display: flex;
+}
+
+h1 {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+.story {
+  margin-top: 0;
+}
+
+span {
+  font-size: 2em; 
+}
+
+p {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 2em;
 }
 
 .icon {
@@ -72,14 +89,20 @@ NAV BAR
   transition: all 0.3s ease-in-out;
 }
 
-.icon:hover {
-  transform: scale(1.2);
+.xLogo {
+  width: 100%;
 }
 
-.xLogo {
-  width: 45px;
-  position: relative;
-  top:4.1px
+.footer {
+  margin-top: auto;
+  text-align: center;
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 /*******************************************
@@ -126,64 +149,10 @@ STRIPES
   animation: slideFromLeft 5s forwards;
 }
 
-
-/*******************************************
-MAIN PAGE 
-*******************************************/
-
-.page-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 75px;
-  z-index: 1;
-}
-
-.card {
-  background: rgba(255,255,255);
-  border-radius: 40px;
-  box-shadow: 5px 5px 15px;
-  padding: 30px;
-  margin: 30px;
-  /* max-width: 381px; */
-}
-
-.jacobPic {
-  border-radius: 40px;
-  max-width: 100%;
-}
-
-h1 {
-  font-family: sans-serif;
-  font-size: 1.5em;
-  line-height: 1.2;
-}
-
-.story {
-  margin-top: 0;
-}
-
-span {
-  font-size: 2em; 
-}
-
-p {
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 2em;
-}
-
-
-.footer {
-  margin-top: auto;
-  text-align: center;
-}
-
-/*******************************************
+/* ******************************************
 ANIMATIONS 
 *******************************************/
-@keyframes slideFromTop {
+/* @keyframes slideFromTop {
   0% {
     transform: translateY(-100%);
   }
@@ -237,7 +206,7 @@ ANIMATIONS
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
   animation-delay: 2.5s;
-}
+} */
 
 /*******************************************
 Media Queries  
