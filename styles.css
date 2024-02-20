@@ -4,114 +4,16 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;;
+}
+
 a {
   color: black;
 }
 
-body {
-  background: url(assets/desktop_BG.jpg) fixed;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  font-family: sans-serif;
-  font-weight: 800;
-}
-
-/*******************************************
-NAV BAR  
-*******************************************/
-
-.nav {
-  position: relative;
-  margin: 20px;
-}
-
-.top{
- z-index: 1;
-}
-
-.bottom{
-  -webkit-text-stroke: 15px rgb(230,221,211);
-}
-
-.navName {
-  font-size: 4.5em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 20px;
-  font-family: 'Futura';
-}
-
-/*******************************************
-MAIN PAGE 
-*******************************************/
-
-.bioTop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.page-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 1;
-  margin-top: 150px;
-}
-
-p{
-  align-self: flex-start;
-  padding-bottom: 20px;
-}
-
-.big {
-  max-width: 325px;
-  height: 325px;
-}
-
-.bio {
-  font-size: 35px;
-  padding: 20px;
-  text-align: left;
-}
-
-.card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: rgba(255,255,255);
-  border: 6px solid black;
-  border-radius: 10px;
-  box-shadow: 10px 10px;
-  margin: 20px;
-}
-
-.followButton {
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  margin-top: 10px;
-  color: black;
-  padding: 6px;
-  border: 5px solid black;
-  border-radius:40px;
-  width: 120px;
-  box-shadow: inset 4px 4px;
-}
-
-.socials {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.blue {
-  background-color: lightskyblue;
+p {
+  align-self: center;
 }
 
 h1 {
@@ -119,64 +21,456 @@ h1 {
   line-height: 1.2;
 }
 
-.icon {
-  font-size: 3em;
-  color: black;
-  padding: 30px 20px;
-  transition: all 0.3s ease-in-out;
-}
-
-.footer {
-  margin-top: auto;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.foot {
+body {
+  background: url(assets/desktop_BG.jpg) fixed;
+  background-size: cover;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  font-family: sans-serif;
+  font-weight: 800;
+  padding-bottom: 75px;
+} 
+
+/*******************************************
+NAV  
+*******************************************/
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 136, 0);
+  color: white;
+  font-family: 'Futura';
+  font-weight: bold;
+  padding: 10px 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navName {
+  font-size: 2em;
+}
+
+.nav p{
+  font-size: 1.2em;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav p:hover{
+  text-decoration: overline;
+  cursor: pointer;
+  color: black;
+}
+
+.right{
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+
+/*******************************************
+INTRO 
+*******************************************/
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.introTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.introCard {
+  font-size: 31px;
+  padding: 20px;
+  text-align: left;
+  max-width: 325px;
+  height: 395px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px;
+  margin: 50px;
+}
+
+.jacobPic {
+  max-width: 395px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px black;
+}
+
+/*******************************************
+ABOUT 
+*******************************************/
+
+.about {
+  display: flex;
+  background-color: rgb(250,177,73, 0.8);
+  padding: 180px 80px;
+  margin-bottom: 75px;
+}
+
+.jacobBurger {
+ height: 500px;
+ border-radius: 10px;
+ box-shadow: 3px 3px 10px black;
+ width: auto;
+ transform: rotate(-2deg);
+ margin: 0 30px;
+}
+
+.topic {
+  display: flex;
+  position: relative;
+  left: 0px;
+  bottom: 20px;
+  font-size: 31px;
+  padding: 30px;
+  background-color: white;
+  height: 40px;
+  /* border: 6px solid black; */
+  border-radius: 10px;
+  box-shadow: 10px 10px;
+  z-index: 1;
+}
+
+.aboutCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 140%;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px;
+  padding: 0px 20px;
+}
+
+.aboutCard p{
+  padding: 15px;
+  align-self: flex-start;
+}
+
+/*******************************************
+PROJECTS 
+*******************************************/
+
+.projects {
+  display: flex;
+  padding: 120px 80px;
+  margin-bottom: 75px;
+  background-color: rgb(255, 136, 0, 0.8);
+}
+
+.projectSection {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+
+.projectImage {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.projectCard {
+  display: flex;
+  text-align: center;
+  width: 400px;
+  height: auto;
+  background-color: rgb(255, 136, 0);
+  border-radius: 10px;
+  box-shadow: 10px 10px;
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+.projectCard a {
+  text-decoration: none;
+}
+
+.projectCard p {
+  margin: 10px 0;
+  font-family: 'Futura';
+  color: white;
+}
+
+/*******************************************
+SHOP 
+*******************************************/
+
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(172,111,53, 0.8);
+  padding: 210px 80px;
+  margin-bottom: 75px;
+}
+
+.shopCards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+
+.shopCard {
+  display: flex;
   align-items: center;
   justify-content: center;
+  width: 250px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px;
+  font-size: 1.2rem;
+  margin: 20px;
 }
+
+/*******************************************
+CONTACT 
+*******************************************/
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.8);
+  padding: 255px 80px;
+}
+
+.contactCard {
+  font-size: 2em;
+  margin-top: 100px;
+  color: black;
+  padding: 0 50px;
+  color: white;
+}
+
+.contactCard a{
+  color: white;
+  text-decoration: none;
+}
+
+.contactCard a:hover {
+  color: orange;
+}
+
+hr {
+  border: 3px solid white;
+  margin: 10px 0px;
+  width: 444px;
+}
+
+.smallFont {
+  font-size: 1.4rem;
+  font-weight: 100;
+  padding: 2px 0;
+}
+
+
+/*******************************************
+FOOTER 
+*******************************************/
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgb(255, 136, 0);
+  padding: 15px 30px;
+  font-family: 'Futura';
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1000
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: black;
+}
+
+.socialIcon {
+  width: 40px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgb(72, 71, 71);
+  background-color: rgb(230,221,211);
+  margin: 0 20px;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.socials .card:hover {
+  transform: scale(1.05);
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 /*******************************************
 Media Queries  
 *******************************************/
 
-@media screen and (max-width: 560px) {
-  .page-content{
-    margin-top: 100px;
+@media screen and (max-width: 1500px) {
+  body{
+    background-image: url(assets/mobile_BG.jpg);
+    width: 100vw;
   }
 
-  .socials {
+  /*******************************************
+  NAV  
+  *******************************************/
+
+  .nav .right {
+    display: none;
+  }
+
+  /*******************************************
+  INTRO 
+  *******************************************/
+
+  .introTop {
+    flex-direction: column-reverse;
+  }
+
+  .introCard {
+    width: 330px;
+    font-size: 31px;
+    height: auto;
+  }
+
+  .jacobPic {
+    width: 330px;
+  }
+
+  /*******************************************
+  ABOUT 
+  *******************************************/
+
+  .about {
+    flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding: 100px 45px;
   }
 
-  .bioTop {
+  .topic {
+    margin-bottom: 70px;
+  }
+
+  .aboutCard {
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  /*******************************************
+  PROJECTS 
+  *******************************************/
+
+  .projects {
     flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
-  .page-content {
+  .projectSection {
+    margin-top: 0;
+  }
+
+  .projectCard {
+    margin-bottom: 70px;
+    width: auto;
+  }
   
-  }
-  .nav {
-    margin: 5px;
-  }
-  
-  .navName {
-    font-size: 3rem;
-    
-  }
-  .bottom {
-    -webkit-text-stroke: 10px rgb(230,221,211);
-  }
 
-  .footer {
-    padding-top: 40px;
+  /*******************************************
+  SHOP 
+  *******************************************/
+
+  .shop {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding: 100px 45px;
   }
 
- 
+  .shopCards {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+  }
 
+  /*******************************************
+  CONTACT 
+  *******************************************/
 
+  .contact {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 80px;
+  }
 
+  .contactCard {
+    margin-top: 30px;
+  }
+
+  hr {
+    width: 344px;
+  }
+
+  /*******************************************
+  FOOTER 
+  *******************************************/
+
+  .footer{
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .socials{
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .footer h3 {
+    display: none;
+  }
 }

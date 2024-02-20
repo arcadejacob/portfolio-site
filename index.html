@@ -10,61 +10,148 @@
   </head>
 
   <body>
-
     <section class="nav">
-      <h1 class="navName bottom">Jacob Ashley</h1>
-      <h1 class="navName top">Jacob Ashley</h1>
+      <section class="left">
+        <a href="#intro"><h1 class="navName">Jacob Ashley</h1></a>
+      </section>
+      <section class="right">  
+        <a href="#about"><p>about</p></a>
+        <a href="#projects"><p>projects</p></a>
+        <a href="#shop"><p>shop</p></a>
+        <a href="#contact"><p>contact</p></a>
+      </section>
     </section>
 
-    <section class="page-content">
-
-      <section class="bioTop">
+    <section id="intro" class="intro">
+      <section class="introTop">
+        <section class="introCard">
+          <p>Hi! I'm Jacob, a Front-end Web Developer and Graphic Designer.</p>
+        </section>
         <section class="jacob">
-          <img class="big jacobPic card" src="assets/Jacob.jpeg" alt="A profile picture of Jacob Ashley">
-        </section>
-
-        <section class="bio big card">
-          <p>Software Development.</p>
-          <p>Graphic Design.</p>
-          <p>Friendship.</p>
+          <img class="jacobPic" src="assets/Jacob.jpeg" alt="A profile picture of Jacob Ashley">
         </section>
       </section>
-
-
-      <section class="socials">
-        <section class="card icon">
-          <a href="https://www.twitter.com/arcadejacob" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-          <div class="blue followButton">Follow</div>
-        </section>
-
-        <section class="card icon">
-          <a href="https://www.linkedin.com/in/jacobashleydev/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-          <div class="followButton">Visit</div>
-        </section>
-
-        <section class="card icon">
-          <a href="https://github.com/jacobashleydev" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <div class="followButton">Follow</div>
-        </section>
-
-        <section class="card icon">
-          <a href=""><i class="fa-solid fa-folder"></i></a>
-          <div class="followButton">Projects</div>
-        </section>
-  
-        <section class="card icon">
-          <a href="mailto:jacobashleydev@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-          <div class="followButton">Contact</div>
-        </section>
-
-
-      </section>
-
     </section>
     
+    <section id="about" class="about">
+      <section class="topic">
+        <p>About</p>
+      </section>
+
+      <section class="photo">
+        <img class="jacobBurger" src="assets/Subject.png" alt="">
+      </section>
+      
+      <section class="aboutCard">
+        <p>Jacob, coming from over 18 years of experience in the food industry, found himself unfulfilled with his career and sought a new path aligned with his passion for art  and technology. He found success with "<a href="http://www.instagram.com/thewoodenarcade" target="_blank">The Wooden Arcade</a>". Over the span of a decade, he meticulously cut and hand painted over a thousand wooden retro pixelated video game pieces, showcasing them at conventions, creating for celebrities and shipping them to fans worldwide. He also founded "<a href="https://www.facebook.com/groups/kongklub" target="_blank">Kong Klub</a>," a thriving online community for competitive arcade Donkey Kong players, still being used by over 1000 active members today.</p>
+        <p>Driven by his artistic flair and knack for community building, Jacob elevated his skills into the realm of graphic design, specializing in 80s and 90s toy and pop culture imagery. Today, he channels his creativity into crafting vibrant, clean, and modern web pages, marking a significant evolution in his career journey by blending his eye for design with building projects that help change the future.</p>
+        <p>Jacob resides in Portland, OR, with his wife Leah, and their son Oliver.</p>
+      </section>
+    </section>
+
+    <section id="projects" class="projects">
+      <section class="topic">
+        <p>Projects</p>
+      </section>
+
+      <section class="projectSection">
+        <section class="projectCard">
+          <a href="https://arcadejacob.github.io/barbershop/">
+            <img class="projectImage" src="assets/barbershop.png" alt="">
+            <p>Barbershop Webpage</p>
+          </a>
+        </section>
+        <section class="projectCard">
+          <a href="https://arcadejacob.github.io/calculator/">
+            <img class="projectImage" src="assets/caalculator.png" alt="">
+            <p>Calculator</p>
+          </a>
+        </section>
+        <section class="projectCard">
+          <a href="https://instagram.com/jacobashleydesign">
+            <img class="projectImage" src="assets/thumb.gif" alt="">
+            <p>Graphic Design</p>
+          </a>
+        </section>
+        <section class="projectCard">
+          <a href="https://arcadejacob.github.io/barbershop/">
+            <img class="projectImage" src="assets/thTC.png" alt="">
+            <p>Tech Commute Webpage</p>
+          </a>
+        </section>
+      </section>
+    </section>
+
+    <section id="shop" class="shop">
+      <section class="topic">
+        <p>Shop</p>
+      </section>
+
+      <section class="shopCards">
+        <section class="shopCard">
+          <img class="shopImage" src="" alt="">
+          <p>Coming Soon</p>
+        </section>
+        <section class="shopCard">
+          <img class="shopImage" src="" alt="">
+          <p>Coming Soon</p>
+        </section>
+        <section class="shopCard">
+          <img class="shopImage" src="" alt="">
+          <p>Coming Soon</p>
+        </section>
+        <section class="shopCard">
+          <img class="shopImage" src="" alt="">
+          <p>Coming Soon</p>
+        </section>
+      </section>
+    </section>
+
+    <section id="contact" class="contact">
+      <section class="topic">
+        <p>Contact</p>
+      </section>
+
+      <section class="contactCard">
+        <p class="underline">Email</p>
+        <hr>
+        <p class="smallFont">JacobAshleyDev@gmail.com</p>
+      </section>
+
+      <section class="contactCard">
+        <p class="underline">Social</p>
+        <hr>
+        <a href="https://www.linkedin.com/in/jacobashleydev/" target="_blank"><p class="smallFont">LinkedIn</p></a>
+        <a href="https://github.com/arcadejacob" target="_blank"><p class="space smallFont">GitHub</p></a>
+        <a href="https://twitter.com/arcadejacob" target="_blank"><p class="smallFont">X / Twitter</p></a>
+        <a href="https://www.instagram.com/arcadejacob/" target="_blank"><p class="smallFont">Instagram</p></a>
+        <a href="https://www.twitch.tv/arcadejacob" target="_blank"><p class="smallFont">Twitch</p></a>
+      </section> 
+    </section>
+
     <section class="footer">
-      <h3>Jacob Ashley &copy; 2024</h3>
+      <h3><a href="https://www.webhamster.com/"> &copy;</a> 2024</h3>
+      
+      <section class="socials">
+        <section class="icon">
+         <a href="https://www.linkedin.com/in/jacobashleydev/" target="_blank"><img class="socialIcon" src="assets/linkedin.png" alt=""></a>
+        </section>
+        <section class="icon">
+          <a href="https://github.com/arcadejacob" target="_blank"><img class="socialIcon" src="assets/github.png" alt=""></a>
+        </section>
+        <section class="icon">
+          <a href="https://twitter.com/arcadejacob" target="_blank"><img class="socialIcon" src="assets/twitter.png" alt=""></a>
+        </section>
+
+        <section class="icon">
+          <a href="https://www.instagram.com/arcadejacob/" target="_blank"><img class="socialIcon" src="assets/instagram.png" alt=""></a>
+        </section>
+
+        <section class="icon">
+          <a href="https://www.twitch.tv/arcadejacob" target="_blank"><img class="socialIcon" src="assets/twitch.png" alt=""></a>
+        </section>
+      </section>
     </section>
-    
+
   </body>
 </html>
